@@ -1,0 +1,447 @@
+/* .home{
+    padding: 0px 10px;
+    padding-bottom: 100px;
+}
+.hero{
+    max-width: 600px;
+    margin: 80px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+}
+.hero h1{
+    font-size: max(4vw,36px);
+}
+.hero p{
+    width: 75%;
+    color: #e3e3e3;
+    line-height: 1.5;
+}
+.hero form{
+    padding: 8px;
+    width: 80%;
+    background-color: white;
+    border-radius: 5px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.hero input{
+    flex: 1;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    padding-left: 10px;
+}
+.hero button{
+    border: none;
+    background: #7927ff;
+    color: white;
+    font-size: 16px;
+    padding: 10px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.crypto-table{
+    max-width: 800px;
+    margin: auto;
+    background: linear-gradient(rgba(84,3,255,0.15),rgba(105,2,153,0.15));
+    border-radius: 15px;
+}
+.table-layout{
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 1.5fr;
+    padding: 15px 20px;
+    align-items: center;
+    border-bottom: 1px solid #3c3c3c;
+}
+.market-cap{
+    text-align: right;
+}
+.table-layout:last-child{
+    border: none;
+}
+.table-layout div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.table-layout div img{
+    width: 35px;
+}
+.table-layout .green{
+    color: #00D515;
+    text-align: center;
+}
+.table-layout .red{
+    color: #ff4646;
+    text-align: center;
+}
+@media (max-width: 768px){
+    .table-layout{
+        grid-template-columns: 0.5fr 3fr 1fr 1fr;
+    }
+    .market-cap{
+        display: none;
+    }
+}
+@media (max-width: 500px){
+    .table-layout div img{
+        width: 25px;
+    }
+    .table-layout{
+        font-size: 13px;
+    }
+    .hero form input{
+        width: 100px;
+    }
+} */
+/* .home {
+    padding: 0 10px;
+    padding-bottom: 100px;
+    background: radial-gradient(circle at top, #1b2b1b, #0e130e);
+    
+    color: white;
+    min-height: 100vh;
+}
+
+.hero {
+    max-width: 700px;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    background: rgba(255, 255, 255, 0.06);
+    padding: 50px 30px;
+    border-radius: 24px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+    transition: transform 0.3s ease;
+}
+
+.hero:hover {
+    transform: scale(1.01);
+}
+
+.hero h1 {
+    font-size: max(4vw, 40px);
+    color: #00e676;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.hero p {
+    width: 85%;
+    color: #cccccc;
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+.hero form {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px;
+    box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.08);
+}
+
+.hero input {
+    flex: 1;
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
+    transition: 0.2s ease;
+}
+
+.hero input::placeholder {
+    color: #aaa;
+}
+
+.hero button {
+    background: linear-gradient(45deg, #00c853, #00e5ff);
+    color: white;
+    font-weight: 600;
+    padding: 10px 26px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.hero button:hover {
+    box-shadow: 0 0 15px #00e676aa;
+}
+
+.crypto-table {
+    max-width: 950px;
+    margin: 70px auto;
+    border-radius: 18px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+}
+
+.table-layout {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 1.5fr;
+    padding: 20px 24px;
+    align-items: center;
+    border-bottom: 1px solid #333;
+    color: white;
+    transition: background 0.3s ease;
+    text-decoration: none;
+}
+
+.table-layout:hover {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.market-cap {
+    text-align: right;
+}
+
+.table-layout:last-child {
+    border-bottom: none;
+}
+
+.table-layout div {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.table-layout div img {
+    width: 35px;
+    transition: 0.2s ease;
+}
+
+.table-layout:hover div img {
+    transform: scale(1.1);
+}
+
+.table-layout .green {
+    color: #00e676;
+    text-align: center;
+}
+
+.table-layout .red {
+    color: #ff4c4c;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .table-layout {
+        grid-template-columns: 0.5fr 3fr 1fr 1fr;
+    }
+
+    .market-cap {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .table-layout div img {
+        width: 25px;
+    }
+
+    .table-layout {
+        font-size: 13px;
+        padding: 14px 16px;
+    }
+
+    .hero form input {
+        width: 100px;
+    }
+
+    .hero {
+        padding: 30px 20px;
+    }
+} */
+.home {
+    padding: 0 10px;
+    padding-bottom: 100px;
+    background: radial-gradient(circle at top, #1b2b1b, #0e130e);
+    padding: 100px 20px 100px 20px;
+    /* greenish-grey background */
+    color: white;
+    min-height: 100vh;
+}
+
+.hero {
+    max-width: 700px;
+    margin: 0 auto 60px auto;
+    /* margin: 80px auto 60px auto; */
+    /* reduced top space */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    background: rgba(255, 255, 255, 0.06);
+
+    padding: 50px 30px;
+    border-radius: 24px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+    transition: transform 0.3s ease;
+}
+
+.hero:hover {
+    transform: scale(1.01);
+}
+
+.hero h1 {
+    font-size: max(4vw, 40px);
+    color: #00e676;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.hero p {
+    width: 85%;
+    color: #cccccc;
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+.hero form {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px;
+    box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.08);
+}
+
+.hero input {
+    flex: 1;
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
+    transition: 0.2s ease;
+}
+
+.hero input::placeholder {
+    color: #aaa;
+}
+
+.hero button {
+    background: linear-gradient(45deg, #00c853, #00e5ff);
+    color: white;
+    font-weight: 600;
+    padding: 10px 26px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.hero button:hover {
+    box-shadow: 0 0 15px #00e676aa;
+}
+
+/* =================== CRYPTO TABLE =================== */
+.crypto-table {
+    max-width: 950px;
+    margin: 70px auto;
+    border-radius: 18px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+}
+
+.table-layout {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 1.5fr;
+    padding: 20px 24px;
+    align-items: center;
+    border-bottom: 1px solid #333;
+    color: white;
+    transition: background 0.3s ease;
+    text-decoration: none;
+}
+
+.table-layout:hover {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.market-cap {
+    text-align: right;
+}
+
+.table-layout:last-child {
+    border-bottom: none;
+}
+
+.table-layout div {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.table-layout div img {
+    width: 35px;
+    transition: 0.2s ease;
+}
+
+.table-layout:hover div img {
+    transform: scale(1.1);
+}
+
+.table-layout .green {
+    color: #00e676;
+    text-align: center;
+}
+
+.table-layout .red {
+    color: #ff4c4c;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .table-layout {
+        grid-template-columns: 0.5fr 3fr 1fr 1fr;
+    }
+
+    .market-cap {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .table-layout div img {
+        width: 25px;
+    }
+
+    .table-layout {
+        font-size: 13px;
+        padding: 14px 16px;
+    }
+
+    .hero form input {
+        width: 100px;
+    }
+
+    .hero {
+        padding: 30px 20px;
+    }
+}
